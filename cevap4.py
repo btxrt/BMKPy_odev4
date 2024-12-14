@@ -31,7 +31,6 @@ print("Sonuç:", sonuc)
 # 4- Kendisine gönderilen 2 sayı arasındaki tüm asal sayıları bulan fonksiyonu yazınız.
 
 def asal_sayilar(baslangic, bitis):
-    """Verilen aralıktaki asal sayıları bulan fonksiyon."""
     asal_sayilar = []
     for sayi in range(baslangic, bitis + 1):
         if all(sayi % i != 0 for i in range(2, int(sayi**0.5) + 1)):
